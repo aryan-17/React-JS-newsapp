@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-
 export class NavBar extends Component {
   static propTypes = {};
 
@@ -9,7 +8,7 @@ export class NavBar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg bg-light">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">
+            <a className="navbar-brand" to="/">
               NewsMonkey
             </a>
             <button
@@ -29,15 +28,22 @@ export class NavBar extends Component {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">
+                  <a className="nav-link active" aria-current="page" to="/">
                     Home
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/about">
+                <li className="nav-item"></li>
+                  <a className="nav-link" to="/about">
                     About
                   </a>
-                </li>
+                  <li className="nav-item"><a className="nav-link" to="/business">business</a></li>
+                  <li className="nav-item"><a className="nav-link" to="/entertainment">entertainment</a></li>
+                  <li className="nav-item"><a className="nav-link" to="/general">general</a></li>
+                  <li className="nav-item"><a className="nav-link" to="/health">health</a></li>
+                  <li className="nav-item"><a className="nav-link" to="/science">science</a></li>
+                  <li className="nav-item"><a className="nav-link" to="/sports">sports</a></li>
+                  <li className="nav-item"><a className="nav-link" to="/about">technology</a></li>
+                
               </ul>
             </div>
           </div>

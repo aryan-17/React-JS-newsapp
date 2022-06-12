@@ -1,4 +1,5 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import React, { Component } from "react";
 import NavBar from "./components/NavBar";
@@ -8,9 +9,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
-        <News pageSize={5}/>
-      </div>
+          <NavBar />
+          <News pageSize={6} country="in" category="sports" />
+      </div >
     );
   }
 }
